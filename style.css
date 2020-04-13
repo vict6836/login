@@ -1,0 +1,48 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url(https://codetheweb.blog/assets/img/posts/css-advanced-background-images/cover.jpg);
+    height: 100%;
+    background-size: cover;
+    background-blend-mode: luminosity;
+    /* Her har jeg sat en bagrundsbillede ind, samt ændret på dets farver*/
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  /*HEr beskrives hvilket fonts der er brugt, eller skal bruges */
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: #3a3a3a;
+  /*Her er det blevet centreret */
+}
+
+#main-holder {
+  width: 30%;
+  height: 50%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: none;
+  /* Her har vi vores main-holder, som er tilknyttet direkte til vores main i html, dette er vores "boks", over ses længde, bredde osv.*/
+}
+
+
+
+
+#login-form-submit {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-weight: bolder;
+  background-color: #3a3a3a;
+  cursor: cursor;
+  outline: none;
+  /* Dette er vores login-form-submit, altså vores submit knap i html, her ses bla hvilken farve knappens tekst har */
+}

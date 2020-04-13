@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+    <title>Login</title>
+
+<link rel="stylesheet" href="style.css">
+<!-- her har vi tilkyttet vores css.-->
+    </head>
+    <script language="javascript">
+        function validate(form){
+            if(form.username.value.length==0){
+                alert("Please enter a username");
+                form.username.focus();
+                return false;
+            }
+//her har vi en forgrening der ved tilfælde af et tomt username-felt, skal give brugeren en alert omkring det manglende felt.
+
+            if(form.userpassword.value.length==0){
+                alert("Please enter a password");
+                form.userpassword.focus();
+                return false;
+            }
+//Dette er den samme forgrening som før, denne gang gælder det bare passwordet.
+if (true) {
+  window.open('https://www.tietgen.dk/handelsgymnasium/')
+}
+//Her har vi en forgrening, der ved udfyldning af begge felter, tager dig videre , til simulationen af at du logger ind, her har jeg valgt at linke Tietgens handelsgymnasiums website.
+        }
+
+
+    </script>
+<!--her slutter scriptet-->
+
+    <body>
+      <main id="main-holder">
+<!--her har vi valgt at bruge main istedet for div, da den giver mere information til browseren.-->
+<!--vi har også givet den et id, for at tilknytte den til css.-->
+
+    <h1>Login</h1>
+
+
+
+    <form  method="post" action="login.form" onsubmit="return validate(this)">
+    <p> <input type="text"  placeholder="Username" name="username"> </p>
+<!--her har vi defineret typen, samt lavet en placeholder, som er det der bliver vist på sitet. -->
+    <p> <input type="password" placeholder="Password" name="userpassword"></p>
+<!-- her har vi igen defineret typen, her har vi valgt password da denne funktion gør din password til prikker når du taster det ind på sitet, udover det har vi igen tilknyttet en placeholder.-->
+    <p><input type="Submit" value="Login" id="login-form-submit"></p>
+<!--her har vi igen defineret typen, udover det har den fået værdien Login , samt et id, så vi kan ændre på den i css. -->
+    </form>
+
+        </main>
+<!--Her slutter vores main, som er den boks der ses i midten på sitet. -->
+    </body>
+    </html>
